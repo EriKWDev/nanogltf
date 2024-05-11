@@ -20,7 +20,7 @@ nanoserde = "0.1"
 [dev-dependencies]
 miniquad = { version = "0.4.0-alpha", features = ["log-impl"] }
 shadermagic = "0.1"
-glam = "0.24"
+glam = "0.25"
 dolly = "0.4"
 zune-png = "0.2"
 zune-jpeg = "0.3"

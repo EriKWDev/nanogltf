@@ -25,6 +25,10 @@ pub struct Gltf {
     #[nserde(default)]
     pub buffer_views: Vec<BufferView>,
     #[nserde(default)]
+    pub textures: Vec<Texture>,
+    #[nserde(default)]
+    pub samplers: Vec<Sampler>,
+    #[nserde(default)]
     pub images: Vec<Image>,
     #[nserde(default)]
     pub scenes: Vec<Scene>,

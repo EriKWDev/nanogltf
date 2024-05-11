@@ -95,7 +95,7 @@ impl Cubemap {
 
         let display_bind = Bindings {
             vertex_buffers: vec![vertex_buffer],
-            index_buffer: index_buffer,
+            index_buffer,
             images: vec![color_img],
         };
 
@@ -110,7 +110,7 @@ impl Cubemap {
         };
         let default_shader = ctx.new_shader(source, display_shader::meta()).unwrap();
 
-        let display_pipeline = ctx.new_pipeline_with_params(
+        let display_pipeline = ctx.new_pipeline(
             &[BufferLayout::default()],
             &[
                 VertexAttribute::new("in_pos", VertexFormat::Float3),

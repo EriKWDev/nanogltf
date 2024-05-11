@@ -169,5 +169,7 @@ fn main() {
         conf.platform.linux_x11_gl = conf::LinuxX11Gl::EGLOnly;
     }
 
+    conf.sample_count = 4;
+
     miniquad::start(conf, move || Box::new(Stage::new()));
 }

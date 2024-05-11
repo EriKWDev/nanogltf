@@ -208,7 +208,7 @@ pub fn load_gltf(ctx: &mut miniquad::Context, json: &str) -> Model {
                 .new_shader(source, shader::meta())
                 .unwrap_or_else(|e| panic!("Failed to load shader: {}", e));
 
-            let pipeline = ctx.new_pipeline_with_params(
+            let pipeline = ctx.new_pipeline(
                 &[
                     BufferLayout::default(),
                     BufferLayout::default(),
